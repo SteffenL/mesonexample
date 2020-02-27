@@ -12,4 +12,5 @@ libpng_project = cmake.subproject('libpng', cmake_options : [
 ])
 libpng_library = libpng_project.dependency('libpng')
 
-subdir('src')
+app_dependencies = [zlib_static_library, libpng_library]
+executable('app', 'src/main.cpp', dependencies : app_dependencies)
