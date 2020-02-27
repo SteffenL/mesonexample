@@ -1,0 +1,6 @@
+[submodule "subprojects/libpng"]
+	path = subprojects/libpng
+	url = https://github.com/glennrp/libpng.git
+[submodule "subprojects/zlib"]
+	path = subprojects/zlib
+	url = https://github.com/madler/zlib.git
